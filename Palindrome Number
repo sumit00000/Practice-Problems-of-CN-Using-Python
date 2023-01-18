@@ -1,0 +1,13 @@
+#Write a program to determine if given number is palindrome or not. Print true if it is palindrome, false otherwise.
+
+num = int(input())
+Reverse = 0
+x = num
+while num > 0:
+    Reminder = num % 10
+    Reverse = (Reverse * 10) + Reminder
+    num = num//10
+if x == Reverse:
+    print("true")
+else:
+    print("false")
