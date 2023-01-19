@@ -1,0 +1,123 @@
+# Q.1  Code : Triangular Star Pattern
+#      Print the following pattern for the given N number of rows.
+#      Pattern for N = 4
+#      *
+#      **
+#      ***
+#      ****
+
+n = int(input())
+i = 1
+while i<=n:
+    j = 1
+    while j<=i:
+        print("*", end="")
+        j = j+1
+    print()
+    i = i+1
+    
+    
+    
+# Q.2 Code : Triangle Number Pattern
+#     Print the following pattern for the given N number of rows.
+#     Pattern for N = 4
+#     1
+#     22
+#     333
+#     4444
+
+n = int(input())
+i = 1 
+while i<=n:
+    j = 1
+    p = i
+    while j<=i:
+        print(i, end="")
+        j = j+1
+        p = i+1
+    print()
+    i = i+1
+    
+    
+    
+# Q.3 Code : Reverse Number Pattern
+#    Print the following pattern for the given N number of rows.
+#    Pattern for N = 4
+#     1
+#     21
+#     321
+#     4321
+
+n = int(input())
+i = 1
+while i<=n:
+    j = 1
+    p = 1
+    while j<=i:
+        print(i-j+1, end="")
+        j = j+1
+        p = p+1
+    print()
+    i = i+1
+    
+    
+    
+# Q.4 Print the following pattern for the given N number
+#     Pattern for N = 4
+#     1
+#     12
+#     123
+#     1234
+    
+    n = int(input())
+i = 1
+while i<=n:
+    j = 1
+    while j<=i:
+        print(j, end="")
+        j = j+1
+    print()
+    i = i+1
+    
+    
+    
+# Q.5 Print the following pattern for the given N number.
+#    Pattern for N = 4
+#    1
+#    23
+#    345
+#    4567
+
+n = int(input())
+i = 1
+while i<=n:
+    j = 1
+    p = i
+    while j<=i:
+        print(p, end="")
+        p = p+1
+        j = j+1
+    print()
+    i = i+1
+    
+    
+    
+ # Q.6 Print the following pattern for the given N number.
+#    Pattern for N = 4
+#     1
+#     23
+#     456
+#     78910
+
+n = int(input())
+i = 1
+p = 1
+while i<=n:
+    j = 1
+    while j<=i:
+        print(p, end="")
+        p = p+1
+        j = j+1
+    print()
+    i = i+1
+   
