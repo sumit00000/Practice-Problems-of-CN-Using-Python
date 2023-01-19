@@ -1,0 +1,118 @@
+# Q.1 Number Pattern 1
+#    Print the following pattern for the given N number of rows.
+#    Pattern for N = 4
+#     1
+#     11
+#     111
+#     1111
+
+n = int(input())
+i = 1
+while i<=n:
+    j = 1
+    while j<=i:
+        print("1", end='')
+        j = j+1
+    print()
+    i = i+1
+    
+    
+    
+# Q.2 Number Pattern 2
+#    Print the following pattern for the given N number of rows.
+#    Pattern for N = 4
+#     1
+#     11
+#     202
+#     3003
+
+n = int(input())
+i=1
+
+while i <= n:
+    j=1
+    while j <= i:
+        if i == 1:                                                                                         
+            print(1,end ='')
+        
+        elif j == 1 or j == i:
+            print(i-1,end ='')
+            
+        else:
+            print(0,end='')
+            
+        j=j+1
+    print()
+    i=i+1
+    
+    
+    
+    
+# Q.3 Number Pattern 3
+#    Print the following pattern for the given N number of rows.
+#    Pattern for N = 4
+#     1
+#     11
+#     121
+#     1221
+
+n = int(input())
+i = 1
+
+while i <= n:
+    j = 1
+    while j <= i:
+        if i == 1:
+            print(1, end='')
+
+        elif j == 1 or j == i:
+            print(1, end='')
+
+        else:
+            print(2, end='')
+
+        j = j+1
+    print()
+    i = i+1
+    
+    
+    
+    
+# Q.4 Number Pattern
+#    Print the following pattern for the given N number of rows.
+#    Pattern for N = 4
+#     1234
+#     123
+#     12
+#     1
+
+n = int(input())
+i=1
+
+while i <= n:
+    j=1
+    while j <= n-i+1:                                                                                
+        print(j,end ='')            
+        j=j+1
+    print()
+    i=i+1
+    
+    
+    
+# Q.5 Alpha Pattern
+#    Print the following pattern for the given N number of rows.
+#    Pattern for N = 3
+#     A
+#     BB
+#     CCC
+
+n = int(input())
+i = 1
+while i<=n:
+    j = 1
+    while j<=i:
+        charP = chr(ord('A') + i - 1)
+        print(charP, end='')
+        j = j+1
+    print()
+    i = i+1    
