@@ -1,0 +1,79 @@
+# Q.1 Code : Character Pattern
+#    Print the following pattern for the given N number of rows.
+#    Pattern for N = 4
+#     A
+#     BC
+#     CDE
+#     DEFG
+
+n = int(input())
+i = 1
+while i<=n:
+    j = 1
+    start_char = chr(ord("A") + i -1)
+    while j<=i:
+        charP = chr(ord(start_char) + j - 1)
+        print(charP, end="")
+        j = j+1
+    print()
+    i = i+1
+
+
+
+
+# Q.2 Code : Interesting Alphabets
+#    Print the following pattern for the given number of rows.
+#    Pattern for N = 5
+#     E
+#     DE
+#     CDE
+#     BCDE
+#     ABCDE
+
+n=int(input())
+for i in range(n,0,-1):
+    for j in range(i,n+1):
+        print(chr(j+64),end="")
+    print("") 
+    
+
+
+
+# Q.3 Print the following pattern for the given number
+#     ABCD
+#     ABCD
+#     ABCD
+#     ABCD
+
+n = int(input())
+i = 1
+while i<=n:
+    j = 1
+    while j<=n:
+        charP = chr(ord('A') + j - 1)
+        print(charP, end="")
+        j = j+1
+    print()
+    i = i+1
+    
+    
+    
+    
+# Q.4 Print the following pattern for the given number 
+#     ABCD
+#     BCDE
+#     CDEF
+#     DEFG
+
+n = int(input())
+i = 1
+while i<=n:
+    j = 1
+    start_char = chr(ord('A') + i - 1)
+    while j<=n:
+        charP = chr(ord(start_char) + j - 1)
+        print(charP, end="")
+        j = j+1
+    print()
+    i = i+1
+    
